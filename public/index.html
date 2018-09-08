@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game of life</title>
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="title">
+		<h1>Game of Life</h1>
+	</div>
+	<div id="body">
+		<div id="grids">
+			<h2>Grid Sizes</h2>
+			<hr>
+			<div><button class="grid-button" onclick="grid.createGrid(4, 3)">4 x 3</button></div>
+			<div><button class="grid-button" onclick="grid.createGrid(8, 6)">8 x 6</button></div>
+			<div><button class="grid-button" onclick="grid.createGrid(12, 8)">12 x 8</button></div>
+
+			<h2>Game</h2>
+			<hr>
+			<div><button class="grid-button" onclick="grid.roll()">Roll</button></div>
+		</div>
+		<div id="game"></div>
+	</div>
+
+<script src="./js/cell.js"></script>
+<script src="./js/grid.js"></script>
+<script src="./js/game.js"></script>
+</body>
+</html>
